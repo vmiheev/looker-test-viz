@@ -1,4 +1,5 @@
-looker.plugins.visualizations.add({
+const visObject = {
+
 	create: function(element, config){
 		element.innerHTML = "<h1>Ready to render!</h1>";
 	},
@@ -11,4 +12,6 @@ looker.plugins.visualizations.add({
 		element.innerHTML = html;
 		doneRendering()
 	}
-});
+};
+
+looker.plugins.visualizations.add(visObject);
